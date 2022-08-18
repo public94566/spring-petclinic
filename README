@@ -1,0 +1,4 @@
+1) Run sql server manually
+ docker run -idt -p 3306:3306 -e MYSQL_ALLOW_EMPTY_PASSWORD=true -e MYSQL_USER=petclinic -e MYSQL_PASSWORD=petclinic -e MYSQL_DATABASE=petclinic mysql:5.7
+2) Run test
+docker run -idt -p 8080:8080 -e SPRING_PROFILES_ACTIVE=mysql test 
